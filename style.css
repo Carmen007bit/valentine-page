@@ -1,29 +1,39 @@
 body {
-    background-color: #fce4ec; /* Sanftes Pink */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .container {
     text-align: center;
     padding: 20px;
+    max-width: 500px;
+    width: 100%;
 }
 
 .header-text {
     color: #d81b60;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 20px;
+    line-height: 1.2;
 }
 
-#main-gif, #success-gif {
-    height: 250px;
-    margin-bottom: 30px;
-    border-radius: 15px;
+.gif-container {
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#main-gif {
+    max-height: 100%;
+    border-radius: 20px;
 }
 
 .buttons {
@@ -31,31 +41,32 @@ body {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    flex-wrap: wrap; /* Wichtig, falls der Ja-Button riesig wird */
+    flex-wrap: wrap; /* Wichtig, wenn der Button riesig wird! */
 }
 
 #yes-btn {
-    background-color: #43a047; /* Grün */
+    background-color: #43a047;
     color: white;
     border: none;
-    padding: 15px 30px;
+    padding: 15px 32px;
     font-size: 20px;
     font-weight: bold;
-    border-radius: 12px;
+    border-radius: 15px;
     cursor: pointer;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: 0.2s;
+    transition: all 0.2s ease-in-out;
 }
 
 #no-btn {
-    background-color: #e53935; /* Rot */
+    background-color: #e53935;
     color: white;
     border: none;
-    padding: 15px 30px;
+    padding: 15px 32px;
     font-size: 20px;
     font-weight: bold;
-    border-radius: 12px;
+    border-radius: 15px;
     cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .hidden {
@@ -64,6 +75,7 @@ body {
 
 .success-message {
     color: #d81b60;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bold;
+    margin-top: 20px;
 }
