@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Willst du?</title>
+    <title>Be My Valentine? ❤️</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
     <div class="container">
         <div id="question-section">
-            <h1 class="header-text">Willst du meine Valentine sein?</h1>
-            <img id="main-gif" src="https://media.tenor.com/9nF_Xy19f-0AAAAi/milk-and-mocha-bear.gif" alt="Bär fragt">
-            
+            <h1 class="header-text">Will you be my Valentine? 💖</h1>
+            <div class="gif-container">
+                <img id="main-gif" src="https://media.tenor.com/9nF_Xy19f-0AAAAi/milk-and-mocha-bear.gif" alt="Bär fragt">
+            </div>
             <div class="buttons">
                 <button id="yes-btn">Ja</button>
                 <button id="no-btn">Nein</button>
@@ -19,8 +21,10 @@
         </div>
 
         <div id="success-section" class="hidden">
-            <h1 class="header-text">Juhu! Ich wusste es! 🥰</h1>
-            <img id="success-gif" src="https://media.tenor.com/V7nS7-7D39AAAAAi/milk-and-mocha.gif" alt="Bären feiern">
+            <h1 class="header-text">Knew you would say yes! 🎉</h1>
+            <div class="gif-container">
+                <img src="https://media.tenor.com/V7nS7-7D39AAAAAi/milk-and-mocha.gif" alt="Bären feiern">
+            </div>
             <p class="success-message">Du hast mich zum glücklichsten Menschen gemacht! ❤️</p>
         </div>
     </div>
